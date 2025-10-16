@@ -1,6 +1,6 @@
 proxies:
-  - name: "Мой SOCKS5 прокси"
-    type: socks5
+  - name: "Мой прокси"
+    type: https
     server: 45.91.209.156
     port: 14000
     username: 2gLFgg
@@ -11,7 +11,7 @@ proxy-groups:
   - name: "ВСЕ ПРОКСИ"
     type: select
     proxies:
-      - "Мой SOCKS5 прокси"
+      - "Мой прокси"
 
 rules:
   - MATCH,ВСЕ ПРОКСИ
